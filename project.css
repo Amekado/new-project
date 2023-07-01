@@ -1,0 +1,254 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter" , sans-serif;
+    text-decoration: none;
+}
+
+body{
+    /* font-size: 12.8px; */
+    margin:0 10% ;
+    height: auto;
+    background-color:var(--off-white);
+}
+
+:root{
+    --Soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --off-white: #fffdfa;
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+
+
+}
+
+
+a,p{
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+a:hover{
+    color: var(--soft-red);
+}
+ nav li{
+    list-style: none;
+ }
+
+ /* nav li :hover{
+    color:var(--soft-red);
+ } */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+   /* background-color: aqua; */
+    height: 60px;
+    margin-top: 1rem;
+}
+nav ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items:center;
+    
+
+}
+#img1{
+    width: 50rem;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+
+}
+
+.hero{
+    width: 68%;
+}
+
+.new{
+    width: 30%;
+    background-color: var(--very-dark-blue);
+}
+.new-text{
+    width: 90%;
+
+}
+.new-text p{
+    font-size: 0.76rem;
+}
+.new h1{
+    color: var(--Soft-orange);
+}
+.new h3{
+    color: var(--off-white);
+    font-size: 1rem;
+}
+.new-text h3:hover{
+    color: var(--Soft-orange);
+}
+.hero img{
+    width: 100%;
+}
+
+.hero img:nth-of-type(2){
+    display: none;
+}
+
+
+.hero-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.bright{
+    width: 50%;
+   /* background-color: blue; */
+}
+.bright h1{
+    font-family: "inter";
+    font-weight: 900;
+    font-size: 3rem;
+}
+.readmore{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+button{
+    background-color: var(--soft-red);
+    color: var(--off-white);
+    padding: 10px;
+    border: none;
+    width: 50%;
+}
+button a{
+    color: var(--off-white);
+}
+button:hover{
+    background-color:var(--very-dark-blue) ;
+}
+.new{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr{
+ width: 90%;
+ border: 1px solid var(--grayish-blue);
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+.footer-card{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-card img{
+    width: 30%;
+}
+.footer-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 66%;
+}
+.footer-card-text h1{
+    color: var(--grayish-blue);
+}
+.footer-card-text h3{
+    color: var(--very-dark-blue);
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+.footer-card-text p{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.menu{
+    width: 40px;
+    height: 17px;
+    display: none;
+}
+
+
+/* Media Query */
+
+@media (max-width: 778px){
+    
+    ul a{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .hero img:nth-of-type(1){
+        display: none;
+    }
+    .hero img:nth-of-type(2){
+        display: block;
+    }
+    .hero, .new, .bright, .readmore, .footer-card{
+        width: 100%;
+    }
+    .new{
+        height: 480px;
+        margin-top: 2rem;
+
+    }
+    .new p{
+        font-size: 1rem;
+    }
+
+    .main{
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    .hero-content{
+        flex-direction: column;
+        gap: 20px;
+    
+        
+    }
+    .footer{
+        flex-direction: column;
+        gap: 20px;
+    
+    }
+    button{
+        margin-top: 1rem;
+    }
+}
+
+.dropdown ul{
+    height: 20rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+}
