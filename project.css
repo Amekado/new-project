@@ -252,3 +252,6 @@ hr{
     justify-content: space-between;
     list-style: none;
 }
+#offcanvasExample{
+    width: 75%;
+}
